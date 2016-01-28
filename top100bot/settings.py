@@ -2,7 +2,7 @@
 
 SPIDER_MODULES = ['top100bot.spiders']
 NEWSPIDER_MODULE = 'top100bot.spiders'
-DEFAULT_ITEM_CLASS = 'top100bot.items.TopGainer'
+DEFAULT_ITEM_CLASS = 'top100bot.items.Stock'
 LOG_LEVEL = 'INFO'
 
 ITEM_PIPELINES = {
@@ -11,12 +11,13 @@ ITEM_PIPELINES = {
 
 DB_SERVER = 'MySQLdb'            # For detail, please see twisted doc
 DB_CONNECT = {
-    'db': 'scrapy',             # Your db
-    'user': 'yuz835',              #
-    'passwd': 'yuz835',            #
-    'host': 'xx.xx.xx.xxx',      # Your Server
-    'charset': 'utf8',
+    'db': 'django_meiguwiki_db',             # Your db
+    'user': 'xxxx',              #
+    'passwd': 'xxxxx',            #
+    'host': '45.xx.xx.211',	
+ 	'charset': 'utf8',
     'use_unicode': True,
+    'port': 3306
 }
 
 
